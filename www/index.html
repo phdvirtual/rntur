@@ -4,23 +4,67 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>RnTur</title>
-    </head>
-    <body>
 
-        <div class="app">
-            <h1>RN Tur</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Marcelo e Danilo vão ficar ricos...</p>
-                <p class="event received">Estou trabalhando no APP</p>
-            </div>
-        </div>
+        <style type="text/css" media="screen">@import "themes/css/apple.css";</style>
+
+        <title>RnTur</title>
 
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
+        <script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jqtouch.js" type="text/javascript" charset="utf-8"></script>
+
+        <script type="text/javascript" charset="utf-8">
+            $.jQTouch({
+                icon: 'icon.png',
+                startupScreen: 'img/startup.png'
+            });
+          
+        </script>
+    </head>
+    <body>
+
+        <div id="jqt">
+
+          <!-- Home -->
+          <div id="home">
+
+            <div class="toolbar">
+              <h1>RN Tur</h1>
+            </div>
+
+            <ul id="deviceready" class="blink">
+              <li class="event listening"><a href="#hoteis">Hoteis</a></li>
+              <li class="event received"><a href="#restaurantes">Restaurantes</a></li>
+            </ul>
+          </div>
+
+
+          <!-- Hoteis -->
+          <div id="hoteis">
+            <div class="toolbar">
+              <a href="#" class="back">voltar</a>
+              <h1>Hoteis</h1>
+              <a href="#" class="button">sobre</a>
+            </div>
+
+          
+          </div>
+
+          <!-- Restaurantes -->
+          <div id="restaurantes">
+            <div class="toolbar">
+              <a href="#" class="back">voltar</a>
+              <h1>Restaurantes</h1>
+              <a href="#" class="button">sobre</a>
+            </div>
+          
+          </div>
+
+        </div><!-- Fim de jqt -->
+
     </body>
 </html>
