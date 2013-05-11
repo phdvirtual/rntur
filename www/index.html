@@ -26,19 +26,19 @@
 
         <link rel="stylesheet" href="themes/css/apple.css" title="" />
 
-        <script type="text/javascript" src="phonegap.js"></script>
+        <!--<script type="text/javascript" src="phonegap.js"></script>-->
+
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
 
         <script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jqtouch.js" type="text/javascript" charset="utf-8"></script>
 
         <script type="text/javascript" charset="utf-8">
-            $.jQTouch({
-                icon: 'icon.png',
-                startupScreen: 'img/startup.png'
+            $.jQTouch({ });
+
+            $(document).ready(function(){
+              app.initialize();
+              app.alerta();
             });
           
         </script>

@@ -21,6 +21,9 @@ var app = {
     initialize: function() {
         this.bindEvents();
     },
+    alerta: function() {
+      console.log("armarira... to aqui!!!")
+    },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
