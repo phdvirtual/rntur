@@ -35,8 +35,13 @@
             Zepto(function($){
               app.initialize();
               app.alerta();
-            })
-            
+            });
+            $.jQTouch({
+                icon: 'icon.png',
+                startupScreen: 'img/startup.png'
+            });
+
+
         </script>
 
         <title>Hello World</title>
